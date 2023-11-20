@@ -23,7 +23,7 @@ email: benjamin.l.dayan@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   No definite website plans yet, nor promise for content to have any intrinsic value.
   Potentially a space just for my own personal rumination...
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://benjid.dev:8003" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  BenjiDayan
