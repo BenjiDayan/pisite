@@ -5,7 +5,7 @@ date:   2023-11-20 16:13:00 +0200
 categories: absurd transport jobs
 ---
 
-I promise that this blog will contain more than just trains and job applications! Both clearly take up too much real estate in my head, the latter perhaps more reasonably than the former given my current situation.
+I promise that this blog will contain more than just trains and job applications! Both clearly take up too much real estate in my head, although the latter is perhaps more understandable.
 
 ## Deutschland-Ticket
 
