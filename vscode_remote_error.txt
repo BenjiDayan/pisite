@@ -1,0 +1,51 @@
+[14:15:46.262] Log Level: 2
+[14:15:46.268] SSH Resolver called for "ssh-remote+benjid.dev", attempt 1
+[14:15:46.268] "remote.SSH.useLocalServer": false
+[14:15:46.268] "remote.SSH.useExecServer": false
+[14:15:46.269] "remote.SSH.showLoginTerminal": false
+[14:15:46.269] "remote.SSH.remotePlatform": {}
+[14:15:46.269] "remote.SSH.path": undefined
+[14:15:46.269] "remote.SSH.configFile": undefined
+[14:15:46.269] "remote.SSH.useFlock": true
+[14:15:46.269] "remote.SSH.lockfilesInTmp": false
+[14:15:46.269] "remote.SSH.localServerDownload": auto
+[14:15:46.269] "remote.SSH.remoteServerListenOnSocket": false
+[14:15:46.270] "remote.SSH.showLoginTerminal": false
+[14:15:46.271] "remote.SSH.defaultExtensions": []
+[14:15:46.271] "remote.SSH.loglevel": 2
+[14:15:46.271] "remote.SSH.enableDynamicForwarding": true
+[14:15:46.271] "remote.SSH.enableRemoteCommand": false
+[14:15:46.271] "remote.SSH.serverPickPortsFromRange": {}
+[14:15:46.271] "remote.SSH.serverInstallPath": {}
+[14:15:46.274] VS Code version: 1.84.2
+[14:15:46.274] Remote-SSH version: remote-ssh@0.107.1
+[14:15:46.274] darwin arm64
+[14:15:46.275] SSH Resolver called for host: benjid.dev
+[14:15:46.275] Setting up SSH remote "benjid.dev"
+[14:15:46.276] Using commit id "1a5daa3a0231a0fbba4f14db7ec463cf99d7768e" and quality "stable" for server
+[14:15:46.277] Install and start server if needed
+[14:15:48.307] PATH: /Users/benjidayan/.gem/ruby/3.2.2/bin:/Users/benjidayan/.rubies/ruby-3.2.2/lib/ruby/gems/3.2.0/bin:/Users/benjidayan/.rubies/ruby-3.2.2/bin:/Users/benjidayan/.local/bin:/usr/local/texlive/2022/bin/universal-darwin:/opt/homebrew/opt/llvm/bin:/opt/homebrew/anaconda3/bin:/opt/homebrew/anaconda3/condabin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/TeX/texbin:/usr/local/share/dotnet:~/.dotnet/tools
+[14:15:48.307] Checking ssh with "ssh -V"
+[14:15:48.317] > OpenSSH_9.4p1, LibreSSL 3.3.6
+
+[14:15:48.319] Running script with connection command: ssh -T -D 56034 -o ConnectTimeout=15 'benjid.dev' bash
+[14:16:05.331] Resolver error: Error: Connecting with SSH timed out
+	at g.Timeout (/Users/benjidayan/.vscode/extensions/ms-vscode-remote.remote-ssh-0.107.1/out/extension.js:2:642829)
+	at Timeout._onTimeout (/Users/benjidayan/.vscode/extensions/ms-vscode-remote.remote-ssh-0.107.1/out/extension.js:2:760665)
+	at listOnTimeout (node:internal/timers:569:17)
+	at process.processTimers (node:internal/timers:512:7)
+[14:16:05.342] ------
+
+
+
+
+[14:16:05.526] Opening exec server for ssh-remote+benjid.dev
+[14:16:05.531] Initizing new exec server for ssh-remote+benjid.dev
+[14:16:05.539] Using commit id "1a5daa3a0231a0fbba4f14db7ec463cf99d7768e" and quality "stable" for server
+[14:16:05.541] Install and start server if needed
+[14:16:07.447] getPlatformForHost was canceled
+[14:16:07.447] Exec server for ssh-remote+benjid.dev failed: Error: Connecting was canceled
+[14:16:07.447] Error opening exec server for ssh-remote+benjid.dev: Error: Connecting was canceled
+[14:16:29.153] "install" terminal command done
+[14:16:29.154] Install terminal quit with output:
+
