@@ -1,0 +1,46 @@
+---
+layout: default
+title: For Fun Blog
+category: fun_blog
+---
+
+<!-- fun_blog is a top level folder and hence gets read by jekyll and put into _site/fun_blog.
+However unless it has its own index.html, there will be no link on the top bar of the site. The derived
+page is precisely that of the index.html here, where we list only fun_blog category posts-->
+
+<div class="home">
+    <!-- <p label="aaaaaasdf">This is a test2</p> -->
+
+    {%- if page.title -%}
+      <h1 class="page-heading">{{ page.title }}</h1>
+    {%- endif -%}
+
+    <p><b>Note!</b> The posts here are not meant to be professional or portfolio-esque. It's rather a space for my own creative writing and entertainment. This is also not to say that the main blog is 100% professional, it's just a bit more oriented that way.</p>
+
+    <!-- <p label="aaaaaasdf">This is a test</p> -->
+  
+    {%- if site.posts.size > 0 -%}
+      <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+      <ul class="post-list">
+        {%- for post in site.posts -%}
+          {% if post.categories contains 'fun_blog' %}
+            <li>
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+            <h3>
+                <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+                </a>
+            </h3>
+            {%- if site.show_excerpts -%}
+                {{ post.excerpt }}
+            {%- endif -%}
+            </li>
+          {% endif %}
+        {%- endfor -%}
+      </ul>
+  
+      <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    {%- endif -%}
+  
+  </div>

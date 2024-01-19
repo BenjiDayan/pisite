@@ -2,7 +2,7 @@
 layout: post
 title:  "Absurdities?"
 date:   2023-11-16 12:05:00 +0200
-categories: absurd transport jobs
+categories: fun_blog absurd transport jobs
 ---
 
 Inaugural absurdities post!

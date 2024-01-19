@@ -32,7 +32,7 @@ Ideas I have:
 - Do a javascript project? -->
 
 ## Projects
-Some select projects to show that I can code (currently seeking for a job). For a more comprehensive list see my [github](https://github.com/BenjiDayan).
+Some select projects to show that I can code (currently seeking for a job). For a more comprehensive list see my [Github](https://github.com/BenjiDayan).
 
 ### Unity Games
 
