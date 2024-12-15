@@ -15,12 +15,12 @@ permalink: /about/
 *Trying on glasses in Taiwan* -->
 
 
-I'm from the United Kingdom, and currently living in Zurich - I just finished a master's in datascience at ETH. 
+I'm from London, where I currently live and work at a startup as an AI engineer. Working on the next chapter of life! 
 
 
 
-## Blog?
-I'm still figuring out the direction for my blog - see initial thoughts in [this meta blog post]({% post_url 2023-11-16-metapost %}).
+## Blog
+Of highly questionable quality. Initial thoughts on writing goals see [this meta blog post]({% post_url 2023-11-16-metapost %}).
 
 <!-- ## Blog?
 I haven't figured out what I'm doing with this "Blog". It may also serve as a personal website
@@ -32,7 +32,11 @@ Ideas I have:
 - Do a javascript project? -->
 
 ## Projects
-Some select projects to show that I can code (currently seeking for a job). For a more comprehensive list see my [Github](https://github.com/BenjiDayan).
+Some select projects that I'm more proud of. For a more comprehensive list see my [Github](https://github.com/BenjiDayan).
+
+### Master's Thesis
+
+On investigating the GIRG (geometric inhomogeneous random graphs) model's empirical fit to real life social network graphs. [Github repo](https://github.com/BenjiDayan/GIRGs). Fortunate to be able to together with my supervisors publish it as a [paper](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xeSfmIIAAAAJ&citation_for_view=xeSfmIIAAAAJ:d1gkVwhDpl0C)
 
 ### Unity Games
 
