@@ -2,7 +2,7 @@
 layout: post
 title:  "League analysis"
 date:   2025-06-15 20:57:00 -0800
-categories: main_blog raspberrypi coding
+categories: fun_blog videogames
 ---
 
 
@@ -170,7 +170,7 @@ You may have heard of the Adam Smith / David Ricardo theory of international tra
 Somewhat analagously, champions in league are all unique, and have their own comparative advantages. A primary differentiator is between long-ranged and shorter-ranged (often melee) champions. In a 2v2 teamfight setting where both sides have one ranged and one melee champion, by the laws of geometry, the melee champions will clash in the middle and bear the brunt of enemy firepower, while the ranged champions will dish out DPS from afar while taking little damage themselves. It's already clear that the roles of **tank** and **ADC** should come about!
 
 The comparative disadvantage of the melee champion of being first to the line of fire means their investing in offensive power will be less useful than into defense. The simple reason being that
-1. They will die before their long-ranged ally. Additional DPS is useless when dead!
+1. They will die before their long-ranged ally. Additional DPS is useless when dead! This gets worse the bigger the teamfight (nvn) - more enemy firepower concentrated on the first frontline target
 2. More subtly, being melee inherently makes it harder to actually apply DPS (think multiple rounds of shot arrows before the swordsman can close the distance)
 
 The vast simplification of the 2v2 fight is that both frontline melee champs take 100% of the enemy team's DPS. Whichever melee expires first will cease to output DPS, and the opposing team's DPS will immediately redirect to the long-ranged champion behind. We call this style of fighting **front-to-back**.
@@ -279,13 +279,64 @@ Most champions that have infinite scaling only really do in one dimension, e.g. 
 
 Before we get too carried away, despite the indeed huge stat boosts Thresh can accrue, his kit is distinctly poorly designed to benefit from it, as I will explain. We can still theorycraft how best to leverage his powers, and end up with semi-decent scaling bruiser top viability.
 
-First off, Thresh's abilities are piss poor at dealing consistent damage like conventional mages. All of his abilities are short range, and even worse his Q forces him to stand still while casting, making him a sitting duck. Thus, despite his built in AP generation, he'll never be a good mage.
+#### Thresh is too short-ranged and immobile to solely be a damage dealer
 
-On the ADC front, Thresh is equally sandbagged. His attack range is 450, shorter than the shortest ranged ADCs like Sivir and Lucian. He has a very high **Windup %** of 24% - the amount of time at the beginning of his attack he must stand still while attacking - movement commands during this window cancel the auto attack. For comparison Sivir's is 12% and Lucian is 15%. 24% is higher even than non ADCs with clunky feeling auto attacks like Anivia. This windup makes stutter stepping less effective. Very clunky melee attackers like Nautilus 30% and Sion 25% are still worse though! Actually the only ADC comparable is Nilah, who has 350 range with her Formless Blade Q procced, and a 22% windup. For Nilah and Thresh are near unique in being "ranged" but with a projectile-less auto attack animation - Nilah's whip and Thresh's flay - hence the long windup. Nonetheless, Nilah, unlike Thresh, has better mobility and self-protection granting abilities. The nail in the coffin for Thresh though is a mechanic which I think is unique to him - he has a **Windup modifier** of 0.25 (not present on other champions). This means that even if he builds attack speed, it will affect his windup time with only 1/4 effectiveness - normally champions building AS feel more fluid and better at stutter stepping with increased AS, whereas Thresh is kind of the opposite.
+We saw in [2v2 short vs long range role assignment](#2v2-and-the-evolution-of-role-assignment) that short-ranged champions just aren't good at building exclusively damage - they will get quickly blown up in a teamfight wasting their damage potential. The exception to this rule is actually assassins - if you're sneaky and mobile enough you can sneak past the frontline to quickly take out the backline, and maybe even escape afterwards too. Thresh is however both quite short ranged and immobile. The exception is Thresh's Q - it's long ranged, and actually offers some mobility as if you hit something you can grappling hook to it. However it's still single target damage, easy to dodge, and you actually CC yourself (unable to move) while casting it, endangering yourself.
 
-Hence Thresh's bonus AP is maybe only 1/3 as useful as on mages, and his on-hit damage maybe a little less than 1/2 as useful as on an ADC. What's more his soul armour scaling is somewhat offset by another unique situation for him of having no built in armour scaling with levels (he has to get it all through souls). Thus 100 soul thresh is only maybe getting ~1 item of bonus utility after all. 
+As an ADC, Thresh has a short range: 450 vs even short ranged ADCs like Sivir, Lucian with 500. He has a very high **Windup%** of 24% vs their 12%, 15% - comparable to clunky big melee attacking champions like Sion (25%) & Nautilus (30%). This makes him inefficient at stutter stepping (interspacing moving and attacking to DPS while retaining mobility). He is further uniquely sandbagged by a **Windup-modifier** of 0.25 - I think the only other champion in the game with one is Kalista at 0.75 - it means that his attack windup time is decreased at 25% efficiency by increased AS - meaning I believe that building AS actually makes his windup (immobile) time take an ever larger portion of his total attack animation. This feels terrible if you're used to normal ADCs, and at high AS to achieve good DPS he basically has to stand still while attacking.
 
-Hence, with his short range and bonus armour from souls, Thresh is destined to be a bruiser, though still able to get some good damage out from his infinite scalings. Carry thresh thus naturally lives in top lane, and excels at abusing his range advantage in early laning, pushing down towers, and winning 1v1s on the splitpush in the later game having scaled up offense and defense through his souls and item purchases.
+
+#### Bruiser Toplane Thresh build
+
+Thus Thresh is best built at least somewhat tanky. However with his inherent soul based bonus offense powers, and lacking the tool kit of a true tank, I argue he's best built as a bruuiser top-laner - mix of offense and defense! With all of his free on-hit damage, building a little AS is important. I generally take the Legend AS rune in the Precision rune tree, and avoid building any AS items early - they become more effective later in the game when he he's stacked more souls. To scale with this bonus AS, a bit of AD is important too. Thresh's E gives a strong 210% bonus AD magic damage on your first attack, whereas the 1.7/soul on-hit magic damage applies to every auto attack.
+
+<figure class="image-with-caption" style="width:95%; float:none; text-align: center; margin:0 auto;">
+    <img src="/assets/images/Thresh_E.png" style="max-width:100%;height:auto;">
+    <figcaption><em>Soul and AD scaling on-hit magic damage</em></figcaption>
+</figure>
+
+Finally Thresh should build mostly HP and MR, and only a little armour in the early game, before his soul scaling makes extra marginal armour quite useless (likewise bonus AP should be avoided). 
+
+Putting this all together I like to rush Heartsteel first item for its scaling HP (even though thresh has no inherent HP scalings. I guess I'm just doubling down on the scaling fantasy). Next Thresh really lacks good wave clear (his E active is ok, but also his disengage so risky), so either Hollow Radiance (also HP, MR) or Titanic Hydra (also HP, AD). Early steelcap boots for a bit of Armour and no more Armour items (maybe except Randuins lategame against heavy enemy crit). Third item I like Terminus - I think it might be optimal to maximise Thresh's hybrid magic and physical damage output, as well as giving some AS and AD. Guinsoo's rageblade is also very good for the AS and double on-hit dmg proc, possibly better against enemies with lower resistances. Other items to consider are also Stattik Shiv (AD, AS, waveclear), Hullbreaker (AD, HP), and Overlord's Bloodmail (HP, AD, AD scalin with bonus HP).
+
+General tips when playing scaling bruiser Thresh toplane:
+- like any ranged top, you're weak early before soul scaling builds up. Abuse your range to poke, but be careful of getting all-inned!
+- souls are pretty valuable. Think of them like cannon minions (similar gold value!) - you don't want to miss one. You can throw your W lantern to pick them up from afar if in danger. Jungle camps also give souls so get some free stacks when your jungler is taking krugs/gromp (krugs especially good)
+
+Scaling bruiser Thresh isn't great - his clear speed early is quite bad, and minion waves dropping souls when you're nearby is a little early warning sign to enemy laners! Spiderthresh Q-ing jungle camps over walls does feel good though!
+
+
+#### Some tweak ideas that could make Toplane / Jungle Thresh feel better
+(Or even scaling botlane Thresh with co-carry suports like Senna (?))
+
+1. Thresh's strange windup modifier just feels annoying when trying to stutter step, making utilising bonus AD and AS feel a little bad. I get that it's meant to make his "not a projectile flay auto-attack" feel unique/realistic, which does make sense too. I would actually propose making the longer windup% / modifier only apply on a fully charged E-passive attack (scaling with degree of charge) - so the extra clunkiness only comes at this first auto attack, and feels like a correlate of the nice bonus AD scaling damage; subsequent attacks could then be "normal".
+
+2. I haven't confirmed, but I believe that if Thresh's Q one-shots the target (e.g. a ranged creep when he has a lot of souls lategame), he can't then spiderman grapple hook over to the dead corpse. Niche, but allowing an instant recast before hit to still grapple over could help in some escape situations
+
+3. Thresh can't auto-attack after his Q connects (makes sense - his chain scythe thing is used for both). This can however feel frustrating when you're building on-hit Thresh. Perhaps a new auto-attack command during Q could automatically cancel the shackle stun.
+
+An aside general issue is that the league item system has scant support for scaling hybrid (magic and physical) damaging champions (Thresh being an example with his magic AP scaling abilities and magic on-hit damage). Terminus and Rageblade are the only two items, and both focus on the on-hit hybrid. Terminus is a blessing, as it gives a "buy 1 get 1 free" on Armour/MR resistance penetration (though the counterfactual is if hybrid champions were forced to buy 2 separate penetration items while most damage dealers only need the 1), but has to be slowly stacked up by auto attacks. The item is rarely bought, and perhaps the chief mainstream usecase is on Kalista who doesn't even have any inherent magic damage in their kit... I believe that the game devs noted the difficulty of balancing hybrid champions, leading to the removal of items like hextech gunblade.
+
+
+## Thanks for reading!
+
+Acknowledgements to all of my poor teammates who had to play with me as Thresh top.
+
+<figure class="image-with-caption" style="width:95%; float:none; text-align: center; margin:0 auto;">
+    <img src="/assets/images/Thresh_9_game_loss_streak.png" style="max-width:100%;height:auto;">
+    <figcaption><em>Yes that is a 9 game loss streak</em></figcaption>
+</figure>
+
+
+<!-- First off, Thresh's abilities are piss poor at dealing consistent damage like conventional mages. All of his abilities are short range, and even worse his Q forces him to stand still while casting, making him a sitting duck. Thus, despite his built in AP generation, he'll never be a good mage. His abilities will hit a bit harder as he gains more souls, but it's not going to be a massive deal.
+
+On the ADC front, Thresh is equally sandbagged. His attack range is 450, shorter than the shortest ranged ADCs like Sivir and Lucian with 500 range). He has a very high **Windup %** of 24% - the amount of time at the beginning of his attack he must stand still while attacking - movement commands during this window cancel the auto attack. This windup makes stutter stepping less effective on him - feeling slow and clunky on him. For comparison Sivir's is 12% and Lucian is 15%. 24% is higher even than non ADCs with clunky feeling auto attacks like Anivia. Very clunky melee attackers like Nautilus 30% and Sion 25% are still worse though! Actually the only ADC comparable is Nilah, who has 350 range with her Formless Blade Q procced, and a 22% windup. For Nilah and Thresh are near unique in being "ranged" but with a projectile-less auto attack animation - Nilah's whip and Thresh's flay - hence the long windup. Nonetheless, Nilah, unlike Thresh, has better mobility and self-protection granting abilities.
+
+The nail in the coffin for ADC Thresh though is a mechanic which I think is unique to him - he has a **Windup modifier** of 0.25 (not present on other champions). This means that even if he builds attack speed, it will affect his windup time with only 1/4 effectiveness - normally champions building AS feel more fluid and better at stutter stepping with increased AS, whereas Thresh is kind of the opposite - and in order to maximise DPS effectively has to stand still.
+
+Hence Thresh's bonus AP is maybe only 1/3 as useful as on mages, and his on-hit damage maybe a little less than 1/2 as useful as on an ADC. What's more his soul armour scaling is somewhat offset by another unique situation for him of having no built in armour scaling with levels (he has to get it all through souls). Thus 100 soul thresh is only maybe getting ~1+ item of bonus utility after all. 
+
+Therefore, with his short range and bonus armour from souls, Thresh is destined to be a bruiser, though still able to get some good damage out from his infinite scalings. Carry thresh thus naturally lives in top lane, and excels at abusing his range advantage in early laning, pushing down towers, and winning 1v1s on the splitpush in the later game having scaled up offense and defense through his souls and item purchases.
 
 
 On items to purchase, with large built in armour and 
@@ -296,23 +347,11 @@ Despite this, with his built in on-hit damage, investing in a little bonus AS is
 
 ...
 
-Thresh should by no means be built as a pure APC or ADC. In fact this would be counter to all that we've learnt.
+Thresh should by no means be built as a pure APC or ADC. In fact this would be counter to all that we've learnt. -->
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-First to explain the supposedly "faulty" math intuition why defense > offense in 2v2, if we pit two teams against each other:
+<!-- First to explain the supposedly "faulty" math intuition why defense > offense in 2v2, if we pit two teams against each other:
 - Team 1: (1x off, 1x def), (1x off, 2x def) i.e. a buffed tank
 - Team : (2x off, 1x def), (1x off, 1x def) i.e. a buffed damage dealer 
 Then viewed as a collective homogeneous teamwide health bar and DPS, the defensive team has e.g. 1000 + 2000 = 3000 HP and only 100 + 100 = 200 AD, whereas the offensive team has 1000 + 1000 = 2000 HP, and 200 + 100 = 300 AD. In the 1v1 case this was a complete draw, but now in the 2v2 case, because the offensive team's frontline champion will die first, they will actually suffer a DPS loss (of 100 AD). Yes, once the super 2000 HP tank on the defensive team dies a period of time later, 
@@ -345,5 +384,7 @@ I barely even play league anymore, however still now, as when I used to, I somet
 - stats basics: ad, as, health, armour etc.
 - try to do scaling analyses
 - dive into some fun champs like thresh, tahm kench
-- 
+-  -->
 
+<br>
+----------------------------------
