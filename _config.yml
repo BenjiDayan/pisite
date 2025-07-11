@@ -29,6 +29,8 @@ url: "https://benjid.dev" # the base hostname & protocol for your site, e.g. htt
 # twitter_username: jekyllrb
 github_username:  BenjiDayan
 
+markdown: kramdown
+
 # Build settings
 theme: minima
 plugins:
