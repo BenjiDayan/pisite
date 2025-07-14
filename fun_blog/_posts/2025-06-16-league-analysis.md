@@ -12,7 +12,7 @@ League is a surprisingly rich game, inspiring players to descend time and again 
 
 [^1]: I found this website which ranks champions by % mained and % one-tricked. E.g. Warwick is the top one-tricked champion: Awooooo!
 
-The genesis of this post was a conviction/fixation that Thresh could be a wildly strong champion, if breaking from his the traditional supportive role. In order to explain how, I will actually dive deeper into wider and more interesting topics, bringing a mathematical and analytical lens. Given League's popularity I'm sure there exists similar analyses elsewhere on the internet, however I'm doing mine mostly from scratch and through reference to <https://wiki.leagueoflegends.com/en-us/>. TBD how much interest/diversion this post will inspire to League non-afficionados - we'll see!
+The genesis of this post was a conviction/fixation that Thresh could be a wildly strong champion, breaking from his traditional supportive role. In order to explain how, I will actually dive deeper into wider and more interesting topics, bringing a mathematical and analytical lens. Given League's popularity I'm sure there exists similar analyses elsewhere on the internet, however I'm doing mine mostly from scratch and through reference to <https://wiki.leagueoflegends.com/en-us/>. TBD how much interest/diversion this post will inspire to League non-afficionados - we'll see!
 
 Much of the phenomena explained by my analysis will be intuitively obvious / already known to people who've played league or other similar games. I hope that nonetheless my explanations may still provide some interesting nuggets of insight!
 
@@ -126,7 +126,7 @@ Then to figure out who wins the 1v1, we can more simply compare just the ratio
 
 I.e. it all ends up as the ratio between each of your $$HP^* \times Armour^* \times AD^* \times AS^*$$! Everything is a simple multiplication...
 
-Now every comparison becomes brutally simple. In a simple world where the baseline stats are 1000 HP, 0 Armour, 100 AD and 1.0 AS, if you choose to buy 10 more AD, and your opponent buys 100 more HP, their $$DM_1$$ increases by 1.1x as does youro $$AM_0$$, so it's a wash and complete draw. With twice as much gold however, the optimal strategy is to buy 10 AD and 100 HP, as this will beat both 20 bonus AD, and 200 bonus HP, for the combined multiplier of $$1.1 \times 1.1 = 1.21 > 1.2$$.
+Now every comparison becomes brutally simple. In a simple world where the baseline stats are 1000 HP, 0 Armour, 100 AD and 1.0 AS, if you choose to buy 10 more AD, and your opponent buys 100 more HP, their $$DM_1$$ increases by 1.1x as does your $$AM_0$$, so it's a wash and complete draw. With twice as much gold however, the optimal strategy is to buy 10 AD and 100 HP, as this will beat both 20 bonus AD, and 200 bonus HP, for the combined multiplier of $$1.1 \times 1.1 = 1.21 > 1.2$$.
 
 Again we see the concept of **diminishing returns**. Every additional 10 AD increases your AM by a smaller and smaller percentage - $$1.1/1 = 10\%,\; 1.2/1.1 = 9.1\%,\; 1.3/1.2 = 8.3\% ...$$.
 
@@ -223,11 +223,11 @@ More could still be done to let everyone eat more cake though! For example havin
 
 ## Hyperscaling laws
 
-If you're familiar with league and have been following the math closely, you may have found the [description of theoretically optimal 1v1](#optimal-stat-balance-bruisers-rule-1v1s) confusing! We showed that defense and offense have equal importance. In fact (though it's not immediately obivous), even in our perfect 2v2 setting, again in a face-off between two teams with equal but opposite bonus stats:
+If you're familiar with league and have been following the math closely, you may have found the [description of theoretically optimal 1v1](#optimal-stat-balance-bruisers-rule-1v1s) strange: we showed that defense and offense have equal importance! In fact (though it's not immediately obivous), even in our perfect 2v2 setting, again in a face-off between two teams with equal but opposite bonus stats:
 - Team 1: (AM = 1x, DM = 1x), (AM = 1x, DM = 2x) i.e. a buffed tank
 - Team 2: (AM = 2x, DM = 1x), (AM = 1x, DM = 1x) i.e. a buffed damage dealer 
 
-Again, the teamfight will be a perfect draw (even though Team 2's front liner will fall first, diminishing their DPS early, Team 2 will still catch up in the end due to their consistently high DPS). But every league player worth their salt knows that excess gold should be channeled to the ADC so they can buy more offensive stats. What's going on?
+Again, the teamfight will be a perfect draw (even though Team 2's front liner will fall first, diminishing their DPS early, Team 2 will still catch up in the end due to their consistently high DPS). But every league player worth their salt knows that excess team gold should be channeled to the ADC so they can buy more offensive stats. What's going on?
 
 ### Superior exponential scaling of damage dealers vs tanks
 
@@ -271,9 +271,9 @@ The powers of scaling are highly enticing - to have the fantasy of wielding ever
     <figcaption><em>The spooky skeleton himself. Reminds me of the children's book character Skulduggery Pleasant</em></figcaption>
 </figure>
 
-Thresh is some kind of soul-devouring demon that can harvest souls from the corpses of vanquished foes (and smaller monsters and minions). Each soul increases his stats, an eye-popping 3 different ones: **Ability Power (AP)**, armour, and his own special **On-hit Dmg**. AP is the equivalent to AD, but for magic damage dealing abilities (champions in league have abilities/spells which they can cast). 1 soul gives Thresh an extra 1 AP, 1 armour point, and 1.7 On-hit Dmg, with no upper limit! 1 AP is worth about 0.57 AD, and 1.7 On-hit Dmg is worth about 1.05 AD (by converting the stats of base items).
+Thresh is some kind of soul-devouring demon that can harvest souls from the corpses of vanquished foes (and smaller monsters and minions). Each soul increases his stats, an eye-popping 3 different ones: **Ability Power (AP)**, Armour, and his own special **On-hit Dmg**. AP is the equivalent to AD, but for magic damage dealing abilities (champions in league have abilities/spells which they can cast). 1 soul gives Thresh an extra 1 AP, 1 armour point, and 1.7 On-hit Dmg, with no upper limit! 1 AP is worth about 0.57 AD, and 1.7 On-hit Dmg is worth about 1.05 AD (by converting the stats of base items).
 
-Most champions that have infinite scaling only really do in one dimension, e.g. Veigar gets only bonus AP. But Thresh has 3! His scaling powers are even more surprising given that 95% of the time that you see thresh played, it is in the support role (neither tank nor damage dealer, rather a less directly useful role that eschews collecting gold, and has duties like scouting out the enemy team's positions, and sacrificing their lives to beneficially engage teamfights). Yet a good Thresh player will have over 100 souls collected by the start of late-game - that's 2-3 items of pure value from additional stats! 
+Most champions that have infinite scaling only really do in one dimension, e.g. Veigar gets only bonus AP. But Thresh has 3! His scaling powers are even more surprising given that 95% of the time that you see Thresh played, it is in the support role (neither tank nor damage dealer, rather a less directly useful role that eschews collecting gold, and has duties like scouting out the enemy team's positions, and sacrificing their lives to beneficially engage teamfights). Yet a careful Thresh player will have over 100 souls collected by mid to late-game - that's 2-3 items of pure value from additional stats! 
 
 ### Why Thresh isn't the hyper carry we dreamed of - but can still be strong!
 
@@ -281,50 +281,52 @@ Before we get too carried away, despite the indeed huge stat boosts Thresh can a
 
 #### Thresh is too short-ranged and immobile to solely be a damage dealer
 
-We saw in [2v2 short vs long range role assignment](#2v2-and-the-evolution-of-role-assignment) that short-ranged champions just aren't good at building exclusively damage - they will get quickly blown up in a teamfight wasting their damage potential. The exception to this rule is actually assassins - if you're sneaky and mobile enough you can sneak past the frontline to quickly take out the backline, and maybe even escape afterwards too. Thresh is however both quite short ranged and immobile. The exception is Thresh's Q - it's long ranged, and actually offers some mobility as if you hit something you can grappling hook to it. However it's still single target damage, easy to dodge, and you actually CC yourself (unable to move) while casting it, endangering yourself.
+We saw in [2v2 short vs long range role assignment](#2v2-and-the-evolution-of-role-assignment) that short-ranged champions just aren't good at building exclusively damage - they will get quickly blown up in a teamfight wasting their damage potential. The exception to this rule is actually assassins - if you're sneaky and mobile enough you can bypass the enemy frontline to quickly take out their backline, and maybe even escape afterwards too. Thresh is however both quite short ranged and immobile. The exception is Thresh's Q - it's long ranged, and actually offers some mobility as if you hit something you can grappling hook to it. However it's still single target damage, easy to dodge, and you actually CC yourself (Crowd Control - unable to move) while casting it, endangering yourself.
 
 As an ADC, Thresh has a short range: 450 vs even short ranged ADCs like Sivir, Lucian with 500. He has a very high **Windup%** of 24% vs their 12%, 15% - comparable to clunky big melee attacking champions like Sion (25%) & Nautilus (30%). This makes him inefficient at stutter stepping (interspacing moving and attacking to DPS while retaining mobility). He is further uniquely sandbagged by a **Windup-modifier** of 0.25 - I think the only other champion in the game with one is Kalista at 0.75 - it means that his attack windup time is decreased at 25% efficiency by increased AS - meaning I believe that building AS actually makes his windup (immobile) time take an ever larger portion of his total attack animation. This feels terrible if you're used to normal ADCs, and at high AS to achieve good DPS he basically has to stand still while attacking.
 
 
 #### Bruiser Toplane Thresh build
 
-Thus Thresh is best built at least somewhat tanky. However with his inherent soul based bonus offense powers, and lacking the tool kit of a true tank, I argue he's best built as a bruuiser top-laner - mix of offense and defense! With all of his free on-hit damage, building a little AS is important. I generally take the Legend AS rune in the Precision rune tree, and avoid building any AS items early - they become more effective later in the game when he he's stacked more souls. To scale with this bonus AS, a bit of AD is important too. Thresh's E gives a strong 210% bonus AD magic damage on your first attack, whereas the 1.7/soul on-hit magic damage applies to every auto attack.
+Thus Thresh is best built at least somewhat tanky. However with his inherent soul based bonus offense powers, and lacking the tool kit of a true tank, I argue he's best built as a bruuiser top-laner - mix of offense and defense! With all of his free on-hit damage, building a little AS is important. I generally take the Legend AS rune in the Precision rune tree, and avoid building any AS items early - they become more effective later in the game when he he's stacked more souls. To scale with this bonus AS, a bit of AD is important too. Thresh's E additionally gives a strong 210% bonus AD magic damage on your first attack, whereas the 1.7/soul on-hit magic damage applies to every auto attack.
 
 <figure class="image-with-caption" style="width:95%; float:none; text-align: center; margin:0 auto;">
     <img src="/assets/images/Thresh_E.png" style="max-width:100%;height:auto;">
     <figcaption><em>Soul and AD scaling on-hit magic damage</em></figcaption>
 </figure>
 
-Finally Thresh should build mostly HP and MR, and only a little armour in the early game, before his soul scaling makes extra marginal armour quite useless (likewise bonus AP should be avoided). 
+Finally, Thresh should build mostly HP and MR, and only a little Armour in the early game, before his soul scaling makes extra marginal armour quite useless (likewise bonus AP should be avoided). 
 
-Putting this all together I like to rush Heartsteel first item for its scaling HP (even though thresh has no inherent HP scalings. I guess I'm just doubling down on the scaling fantasy). Next Thresh really lacks good wave clear (his E active is ok, but also his disengage so risky), so either Hollow Radiance (also HP, MR) or Titanic Hydra (also HP, AD). Early steelcap boots for a bit of Armour and no more Armour items (maybe except Randuins lategame against heavy enemy crit). Third item I like Terminus - I think it might be optimal to maximise Thresh's hybrid magic and physical damage output, as well as giving some AS and AD. Guinsoo's rageblade is also very good for the AS and double on-hit dmg proc, possibly better against enemies with lower resistances. Other items to consider are also Stattik Shiv (AD, AS, waveclear), Hullbreaker (AD, HP), and Overlord's Bloodmail (HP, AD, AD scalin with bonus HP).
+Putting this all together, I like to rush Heartsteel first item for its stacking HP (doubling down on the scaling fantasy). Next, Thresh really lacks good wave clear (his E active is ok, but also his only disengage so risky to use), so either Hollow Radiance (HP, MR) or Titanic Hydra (HP, AD) give a helping hand. Early steelcap boots for a bit of Armour and no more Armour items (maybe except Randuins lategame against heavy enemy crit). Third item I like Terminus - I think it might be optimal to maximise Thresh's hybrid magic and physical damage output, as well as giving some AS and AD. Guinsoo's rageblade is also very good for the AS and double on-hit dmg proc, possibly better than Terminus against enemies with lower resistances. Other items to consider are also Stattik Shiv (AD, AS, waveclear), Hullbreaker (AD, HP, split-push power), and Overlord's Bloodmail (HP, AD; AD scaling with bonus HP).
+
+For runes I think press the attack and hail of blades are both good. Lethal tempo does give AS, but it's less efficient on Thresh than longer range ADCs - it may still good for long 1v1s in the toplane. Grasp has now been heavily nerfed for ranged champions so is inadvisable.
 
 General tips when playing scaling bruiser Thresh toplane:
 - like any ranged top, you're weak early before soul scaling builds up. Abuse your range to poke, but be careful of getting all-inned!
 - souls are pretty valuable. Think of them like cannon minions (similar gold value!) - you don't want to miss one. You can throw your W lantern to pick them up from afar if in danger. Jungle camps also give souls so get some free stacks when your jungler is taking krugs/gromp (krugs especially good)
 
-Scaling bruiser Thresh isn't great - his clear speed early is quite bad, and minion waves dropping souls when you're nearby is a little early warning sign to enemy laners! Spiderthresh Q-ing jungle camps over walls does feel good though!
+Jungle Thresh isn't great - his clear speed early is quite bad, and minion waves dropping souls when you're nearby is a little early warning sign to enemy laners! Spiderman Q-ing jungle camps over walls does feel good though, and his engage kit is still a strong ganking tool!
 
 
 #### Some tweak ideas that could make Toplane / Jungle Thresh feel better
 (Or even scaling botlane Thresh with co-carry suports like Senna (?))
 
-1. Thresh's strange windup modifier just feels annoying when trying to stutter step, making utilising bonus AD and AS feel a little bad. I get that it's meant to make his "not a projectile flay auto-attack" feel unique/realistic, which does make sense too. I would actually propose making the longer windup% / modifier only apply on a fully charged E-passive attack (scaling with degree of charge) - so the extra clunkiness only comes at this first auto attack, and feels like a correlate of the nice bonus AD scaling damage; subsequent attacks could then be "normal".
+1. Thresh's strange windup modifier just feels annoying when trying to stutter step, making utilising bonus AD and AS feel a little bad. I do get that it's meant to make his "not a projectile flay auto-attack" feel unique/realistic. I would actually propose making the longer windup% / modifier only apply on a fully charged E-passive attack (scaling with degree of charge) - so the extra clunkiness only comes at this first auto attack, and feels like a correlate of the nice bonus AD scaling damage; subsequent attacks could then be "normal".
 
 2. I haven't confirmed, but I believe that if Thresh's Q one-shots the target (e.g. a ranged creep when he has a lot of souls lategame), he can't then spiderman grapple hook over to the dead corpse. Niche, but allowing an instant recast before hit to still grapple over could help in some escape situations
 
-3. Thresh can't auto-attack after his Q connects (makes sense - his chain scythe thing is used for both). This can however feel frustrating when you're building on-hit Thresh. Perhaps a new auto-attack command during Q could automatically cancel the shackle stun.
+3. Thresh can't auto-attack after his Q connects (makes sense - his chain scythe thing is used for both). This can however feel frustrating when you're building on-hit Thresh. Perhaps a new auto-attack command during Q could automatically cancel the shackle stun/tug.
 
-An aside general issue is that the league item system has scant support for scaling hybrid (magic and physical) damaging champions (Thresh being an example with his magic AP scaling abilities and magic on-hit damage). Terminus and Rageblade are the only two items, and both focus on the on-hit hybrid. Terminus is a blessing, as it gives a "buy 1 get 1 free" on Armour/MR resistance penetration (though the counterfactual is if hybrid champions were forced to buy 2 separate penetration items while most damage dealers only need the 1), but has to be slowly stacked up by auto attacks. The item is rarely bought, and perhaps the chief mainstream usecase is on Kalista who doesn't even have any inherent magic damage in their kit... I believe that the game devs noted the difficulty of balancing hybrid champions, leading to the removal of items like hextech gunblade.
+An aside general issue is that the league item system has scant support for scaling hybrid (magic and physical) damaging champions (Thresh being an example with his magic AP scaling abilities and magic on-hit damage). Terminus and Rageblade are the only two items, and both focus on the on-hit hybrid. Terminus is a blessing, as it gives a "buy 1 get 1 free" on Armour/MR resistance penetration (though the counterfactual is if hybrid champions were forced to buy 2 separate penetration items while most damage dealers only need the 1), but has to be slowly stacked up by auto attack on enemy champions. The item is rarely bought, and perhaps the chief mainstream usecase is on Kalista who doesn't even have any inherent magic damage in their kit... I believe that the game devs, noting the difficulty of balancing hybrid champions, decided to mostly discourage hybrid builds, leading to the removal of items like hextech gunblade.
 
 
 ## Thanks for reading!
 
-Acknowledgements to all of my poor teammates who had to play with me as Thresh top.
+Acknowledgements to all of my poor teammates who had to play with me as Thresh top. My peak rank in league was silver - trust my modelling and analysis skills rather than my gameplay!
 
 <figure class="image-with-caption" style="width:95%; float:none; text-align: center; margin:0 auto;">
     <img src="/assets/images/Thresh_9_game_loss_streak.png" style="max-width:100%;height:auto;">
-    <figcaption><em>Yes that is a 9 game loss streak</em></figcaption>
+    <figcaption><em>Yes that is a 9 game loss streak. I'm conjecturing, but I think league thinks Thresh top is in fact support, gives good play grades even for poor performance (S, A etc.), and hence increases your ELO notwithstanding consecutive losses?</em></figcaption>
 </figure>
 
 
