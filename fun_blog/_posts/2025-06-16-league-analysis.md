@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "League analysis"
+title:  "Analysing optimal gold allocation in League of Legends; scaling laws and a Thresh case-study"
 date:   2025-06-15 20:57:00 -0800
 categories: fun_blog videogames
 ---
