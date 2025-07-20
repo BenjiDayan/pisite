@@ -4,3 +4,5 @@
 
 layout: home
 ---
+
+<!-- Text here goes directly to the page, above posts! -->

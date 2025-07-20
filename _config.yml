@@ -28,6 +28,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://benjid.dev" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  BenjiDayan
+scholar_username: xeSfmIIAAAAJ
+scholar_url: https://scholar.google.com/citations?user=xeSfmIIAAAAJ&hl=en
+author: Benji Dayan
+
 
 markdown: kramdown
 
@@ -37,6 +41,14 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-twitter-plugin
+  - jekyll-scholar
+
+
+scholar:
+  style: apa  # or your preferred citation style
+  # bibliography: ./refs.bib  # or the path to your BibTeX file
+  link_title: true
+  linkname: pdf
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -15,7 +15,7 @@ permalink: /about/
 *Trying on glasses in Taiwan* -->
 
 
-I'm from London, where I currently live and work at a startup as an AI engineer. Working on the next chapter of life! 
+I'm from London, but am currently (summer 2025) based in Berkeley where I'm interning at an AI lab in the university.
 
 
 
@@ -34,11 +34,11 @@ Ideas I have:
 ## Projects
 Some select projects that I'm more proud of. For a more comprehensive list see my [Github](https://github.com/BenjiDayan).
 
-### Master's Thesis
+#### Master's Thesis
 
 On investigating the GIRG (geometric inhomogeneous random graphs) model's empirical fit to real life social network graphs. [Github repo](https://github.com/BenjiDayan/GIRGs). Fortunate to be able to together with my supervisors publish it as a [paper](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xeSfmIIAAAAJ&citation_for_view=xeSfmIIAAAAJ:d1gkVwhDpl0C)
 
-### Unity Games
+#### Unity Games
 
 <!-- [![CyberCityVR game](/assets/images/UCLVR_game_logo.png){: width="130" style="float: left;" padding="10px;"}](https://benjidayan.itch.io/cybercityvr) -->
 
@@ -46,9 +46,11 @@ On investigating the GIRG (geometric inhomogeneous random graphs) model's empiri
 
 VR FPS game project with students in UCL. I was the developer team lead (!). -->
 
-<div style="display: flex; align-items: center;">
-    <img src="/assets/images/UCLVR_game_logo.png" alt="Image Description" style="margin-right: 20px; margin-bottom: 20px" width="130">
-    <p>VR FPS game project with students in UCL. I was the developer team lead (!).</p>
+<div style="display: flex; align-items: center; gap: 20px;">
+    <a href="https://benjidayan.itch.io/cybercityvr" target="_blank" rel="noopener">
+        <img src="/assets/images/UCLVR_game_logo.png" alt="Image Description" style="margin-bottom: 20px" width="130">
+    </a>
+    <p><em>Cyber City VR</em>: VR FPS game project with students in UCL, designed for the Meta Quest 2. I lead a develooper team of a handful of other students.</p>
 </div>
 
 <!-- <br>
@@ -60,14 +62,23 @@ VR FPS game project with students in UCL. I was the developer team lead (!). -->
 
 top down 2D shooter game project with students in Berkeley. Much appreciation to the teammates and our our mentor Kevin. -->
 
-<div style="display: flex; align-items: center;">
-    <img src="/assets/images/big_bang_blaster_logo.png" alt="BigBangBlaster game" style="margin-right: 20px; margin-bottom: 20px" width="130">
-    <p>Top down 2D shooter game project with students in Berkeley. Much appreciation to the teammates and our our mentor Kevin.</p>
+<div style="display: flex; align-items: center; gap: 20px;">
+    <a href="https://kevponce4.itch.io/big-bang-blaster" target="_blank" rel="noopener">
+        <img src="/assets/images/big_bang_blaster_logo.png" alt="BigBangBlaster game" style="margin-bottom: 20px" width="130">
+    </a>
+    <p><em>Big Bang Blaster</em>: Top down 2D shooter game project with students in Berkeley. Much appreciation to the teammates and our mentor Kevin.</p>
 </div>
 
 
-### Old Website
+#### Old Website
 
 
-At some point I tried to show a little frontend initiative by playing around with react: [https://benjidayan.github.io/random/](https://benjidayan.github.io/random/) - this is a link to a page on an old personal website I made. The dark magic powering this page has been lost to the sands of time, so I dare not try to figure out how to properly incorporate it into this new site.
+At some point I tried to show a little frontend initiative by playing around with react: [https://benjidayan.github.io/random/](https://benjidayan.github.io/random/)
 
+ <!-- - this is a link to a page on an old personal website I made. The dark magic powering this page has been lost to the sands of time, so I dare not try to figure out how to properly incorporate it into this new site. -->
+
+### Publications
+
+My [Google Scholar](https://scholar.google.com/citations?user=xeSfmIIAAAAJ&hl=en) is more useful, but:
+
+{% bibliography %}

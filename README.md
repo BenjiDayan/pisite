@@ -35,3 +35,7 @@ And we also add these style things to the css file:
 ```
 
 TODO - look into <https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site> on how to host on github pages
+
+`bundle exec jekyll serve --drafts`
+
+Note I made _plugins directory - can add .rb for local plugins!
