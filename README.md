@@ -39,3 +39,12 @@ TODO - look into <https://docs.github.com/en/pages/configuring-a-custom-domain-f
 `bundle exec jekyll serve --drafts`
 
 Note I made _plugins directory - can add .rb for local plugins!
+
+
+## Note on redirects??
+index.html and about.markdown and index_blog.html get turned into benjid.dev/index.html and benjid.dev/about.html and benjid.dev/index_blog.html
+
+This seems to only happen on github pages for whatever reason??
+On jekyll local, these all get put under /blog/ instead...
+
+I think jekyll local respects the baseurl: "/blog" in _config.yml, but somehow that doesn't occur for github pages. Maybe 
