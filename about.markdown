@@ -5,8 +5,8 @@ permalink: /about/
 ---
 
 <figure style="float: right; width: 200px; margin: 10px;">
-    <img src="/assets/images/trying_glasses.jpg" style="width: 100%;">
-    <figcaption><em>Trying on glasses in Taiwan</em></figcaption>
+    <img src="/assets/images/seattle_headshot.png" style="width: 100%;">
+    <!-- <figcaption><em>Trying on glasses in Taiwan</em></figcaption> -->
 </figure>
 
 <!-- ![](/assets/images/trying_glasses.jpg){: width="250" style="float: right;"}
