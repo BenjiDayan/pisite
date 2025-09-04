@@ -4,7 +4,7 @@
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     <!--  twas site.title -->
-    <a class="site-title" rel="author" href="{{ site.baseurl }}/index_blog">{{ site.title | escape }}</a>
+    <a class="site-title" rel="author" href="{{ site.baseurl }}/index_blog">{{ "Blog posts" | escape }}</a>
 
     {%- if page_paths -%}
       <nav class="site-nav">

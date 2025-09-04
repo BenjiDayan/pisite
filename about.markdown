@@ -4,23 +4,22 @@ title: About
 permalink: /about/
 ---
 
-<div style="float: right;">
-    <img src="/assets/images/trying_glasses.jpg" width="200">
-    <p><em>Trying on glasses in Taiwan</em></p>
-</div>
-
-## Benjamin Dayan
+<figure style="float: right; width: 200px; margin: 10px;">
+    <img src="/assets/images/trying_glasses.jpg" style="width: 100%;">
+    <figcaption><em>Trying on glasses in Taiwan</em></figcaption>
+</figure>
 
 <!-- ![](/assets/images/trying_glasses.jpg){: width="250" style="float: right;"}
 *Trying on glasses in Taiwan* -->
 
+Hi! I'm an ML researcher / engineer. Most recently I worked on a project on Bayesian networks at CHAI in UC Berkeley; in 2024 I built LLM agents & infrastructure at [Finster AI](https://finster.ai) in London. Before this I enjoyed a 2 year datascience/AI master's at ETH Zurich where I focused on NLP and mathematical models for social networks. I'm broadly interested in language, cognition, interpretable computational methods and neurosymbolic AI.
 
-I'm from London, but am currently (summer 2025) based in Berkeley where I'm interning at an AI lab in the university.
+Prior all of that, I did a math bachelors at the University of Cambridge, and grew up in London except a 1 year stint 2008-9 in Beijing!
 
 
 
-## Blog
-Of highly questionable quality. Initial thoughts on writing goals see [this meta blog post]({% post_url 2023-11-16-metapost %}).
+### Blog
+I aspirationally want to write / self-reflect more. I also document some fun projects, expound / research ideas. Posts are of mixed quality and content/topic!
 
 <!-- ## Blog?
 I haven't figured out what I'm doing with this "Blog". It may also serve as a personal website
@@ -31,14 +30,37 @@ Ideas I have:
 - Do a biweekly (?) blogging challenge to get a feel for it?
 - Do a javascript project? -->
 
-## Projects
-Some select projects that I'm more proud of. For a more comprehensive list see my [Github](https://github.com/BenjiDayan).
+<!-- ## Projects
+Some select projects that I'm more proud of -->
 
-#### Master's Thesis
 
-On investigating the GIRG (geometric inhomogeneous random graphs) model's empirical fit to real life social network graphs. [Github repo](https://github.com/BenjiDayan/GIRGs). Fortunate to be able to together with my supervisors publish it as a [paper](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xeSfmIIAAAAJ&citation_for_view=xeSfmIIAAAAJ:d1gkVwhDpl0C)
+<!-- <div style="float: right;">
+    <img src="/assets/images/socfb-Rice31-2dGIRG.png" width="150">
+    <p><em>4.1k Rice uni social network fit to a 2D GIRG latent space</em></p>
+</div> -->
 
-#### Unity Games
+
+
+### Publications
+
+#### Balanced Bidirectional Breadth-First Search on Scale-Free Networks
+
+[Arxiv Preprint](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xeSfmIIAAAAJ&citation_for_view=xeSfmIIAAAAJ:2osOgNQ5qMEC)
+
+<figure style="float: right; width: 150px; margin: 10px;">
+    <img src="/assets/images/socfb-Rice31-2dGIRG.png" style="width: 100%;">
+    <figcaption><em>4.1k Rice uni social network fit to a 2D GIRG latent space</em></figcaption>
+</figure>
+
+#### Master's Thesis - Expressivity of geometric inhomogeneous random graphs—metric and non-metric
+[Paper at CompleNet 2024](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xeSfmIIAAAAJ&citation_for_view=xeSfmIIAAAAJ:d1gkVwhDpl0C) on investigating the GIRG (geometric inhomogeneous random graphs) model's empirical fit to real life social network graphs.[Github repo](https://github.com/BenjiDayan/GIRGs)
+
+#### Algorithms for acyclic weighted finite-state automata with failure arcs
+
+[Paper at EMNLP 2023](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xeSfmIIAAAAJ&citation_for_view=xeSfmIIAAAAJ:9yKSN-GCB0IC) on graph algorithms for efficiently computing the pathsum in failure-arc augmented Weighted Finite State Automata.
+
+
+### Unity Games
 
 <!-- [![CyberCityVR game](/assets/images/UCLVR_game_logo.png){: width="130" style="float: left;" padding="10px;"}](https://benjidayan.itch.io/cybercityvr) -->
 
@@ -70,15 +92,15 @@ top down 2D shooter game project with students in Berkeley. Much appreciation to
 </div>
 
 
-#### Old Website
+<!-- #### Old Website
 
 
-At some point I tried to show a little frontend initiative by playing around with react: [https://benjidayan.github.io/random/](https://benjidayan.github.io/random/)
+At some point I tried to show a little frontend initiative by playing around with react: [https://benjidayan.github.io/random/](https://benjidayan.github.io/random/) -->
 
  <!-- - this is a link to a page on an old personal website I made. The dark magic powering this page has been lost to the sands of time, so I dare not try to figure out how to properly incorporate it into this new site. -->
 
-### Publications
+<!-- ### Publications
 
 My [Google Scholar](https://scholar.google.com/citations?user=xeSfmIIAAAAJ&hl=en) is more useful, but:
 
-{% bibliography %}
+{% bibliography %} -->
