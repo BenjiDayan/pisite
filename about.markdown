@@ -18,7 +18,7 @@ Prior all of that, I did a math bachelors at the University of Cambridge, and gr
 
 
 
-### Blog
+## Blog
 I aspirationally want to write / self-reflect more. I also document some fun projects, expound / research ideas. Posts are of mixed quality and content/topic!
 
 <!-- ## Blog?
@@ -41,9 +41,9 @@ Some select projects that I'm more proud of -->
 
 
 
-### Publications
+## Publications
 
-### GNN-Guided Block Selection in Gibbs MCMC
+#### GNN-Guided Block Selection in Gibbs MCMC
 
 Bayesian networks (BNs) are great and interpretable, however exact/approximate inference can be intractably slow for large networks. We propose an automated block detection algorithm method to amortise inference time by training a Graph Neural Network (GNN) to propose Blocks (for blocked Gibbs MCMC) directly from a BNs structure.
 
@@ -66,7 +66,7 @@ Bayesian networks (BNs) are great and interpretable, however exact/approximate i
 [Paper at EMNLP 2023](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xeSfmIIAAAAJ&citation_for_view=xeSfmIIAAAAJ:9yKSN-GCB0IC) on graph algorithms for efficiently computing the pathsum in failure-arc augmented Weighted Finite State Automata.
 
 
-### Unity Games
+## Unity Games
 
 <!-- [![CyberCityVR game](/assets/images/UCLVR_game_logo.png){: width="130" style="float: left;" padding="10px;"}](https://benjidayan.itch.io/cybercityvr) -->
 
