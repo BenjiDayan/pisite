@@ -47,19 +47,18 @@ Some select projects that I'm more proud of -->
 
 Bayesian networks (BNs) are great and interpretable, however exact/approximate inference can be intractably slow for large networks. We propose an automated block detection algorithm method to amortise inference time by training a Graph Neural Network (GNN) to propose Blocks (for blocked Gibbs MCMC) directly from a BNs structure.
 
-[Pre-camera ready pdf for NeurIPS 2025 SPIGM/FPI workshops](assets/GNN_Guided_Block_Selection_in_Gibbs_MCMC.pdf) | [Github repo](https://github.com/BenjiDayan/GNN-Gibbs-MCMC-block-selection)
+[Pre-camera ready pdf for NeurIPS 2025 SPIGM/FPI workshops](/assets/GNN_Guided_Block_Selection_in_Gibbs_MCMC.pdf) | [Github repo](https://github.com/BenjiDayan/GNN-Gibbs-MCMC-block-selection)
 
 #### Balanced Bidirectional Breadth-First Search on Scale-Free Networks
-
-[Arxiv Preprint](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xeSfmIIAAAAJ&citation_for_view=xeSfmIIAAAAJ:2osOgNQ5qMEC)
+[Arxiv Preprint](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xeSfmIIAAAAJ&citation_for_view=xeSfmIIAAAAJ:2osOgNQ5qMEC): theory and experiments around benchmarking bidirectional BFS runtime in Chung-Lu graphs and GIRGs
 
 <figure style="float: right; width: 150px; margin: 10px;">
     <img src="/assets/images/socfb-Rice31-2dGIRG.png" style="width: 100%;">
     <figcaption><em>4.1k Rice uni social network fit to a 2D GIRG latent space</em></figcaption>
 </figure>
 
-#### Master's Thesis - Expressivity of geometric inhomogeneous random graphs—metric and non-metric
-[Paper at CompleNet 2024](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xeSfmIIAAAAJ&citation_for_view=xeSfmIIAAAAJ:d1gkVwhDpl0C) on investigating the GIRG (geometric inhomogeneous random graphs) model's empirical fit to real life social network graphs.[Github repo](https://github.com/BenjiDayan/GIRGs)
+#### Master's Thesis - expressivity of geometric inhomogeneous random graphs (GIRGs) - metric and non-metric
+[Paper at CompleNet 2024](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xeSfmIIAAAAJ&citation_for_view=xeSfmIIAAAAJ:d1gkVwhDpl0C) on investigating the GIRG model's empirical fit to real life social network graphs.[Github repo](https://github.com/BenjiDayan/GIRGs)
 
 #### Algorithms for acyclic weighted finite-state automata with failure arcs
 
