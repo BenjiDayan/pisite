@@ -97,6 +97,10 @@ top down 2D shooter game project with students in Berkeley. Much appreciation to
 </div>
 
 
+## Tutoring
+
+I have tutored some math and coding (mostly python!). Feel free to email me <benjamin.l.dayan@gmail.com> if interested.
+
 <!-- #### Old Website
 
 
