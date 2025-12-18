@@ -47,7 +47,7 @@ Some select projects that I'm more proud of -->
 
 Bayesian networks (BNs) are great and interpretable, however exact/approximate inference can be intractably slow for large networks. We propose an automated block detection algorithm method to amortise inference time by training a Graph Neural Network (GNN) to propose Blocks (for blocked Gibbs MCMC) directly from a BNs structure.
 
-[Pre-camera ready pdf for NeurIPS 2025 SPIGM/FPI workshops](/assets/GNN_Guided_Block_Selection_in_Gibbs_MCMC.pdf) | [Github repo](https://github.com/BenjiDayan/GNN-Gibbs-MCMC-block-selection)
+[NeurIPS 2025 SPIGM workshop pdf](/assets/NeurIPS_FPI_template_Bayesian_MCMC_Blocking-8.pdf) | [Github repo](https://github.com/BenjiDayan/GNN-Gibbs-MCMC-block-selection)
 
 #### Balanced Bidirectional Breadth-First Search on Scale-Free Networks
 [Arxiv Preprint](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xeSfmIIAAAAJ&citation_for_view=xeSfmIIAAAAJ:2osOgNQ5qMEC): theory and experiments around benchmarking bidirectional BFS runtime in Chung-Lu graphs and GIRGs
