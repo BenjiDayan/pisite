@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "League Champion Idea"
-date:   2025-06-15 20:57:00 -0800
+date:   2026-03-15 20:57:00 -0800
 categories: videogames
 ---
 
@@ -47,7 +47,7 @@ There's a whole long tail of other types e.g. "utility" abilities which are gene
 
 <figure class="image-with-caption" style="float:left; max-width:220px;">
     <img src="{{ '/assets/images/faceoff.jpg' | relative_url }}" width="220">
-    <figcaption><em>2/5 rating in my opinion :')</em></figcaption>
+    <figcaption><em>2/5 movie in my opinion :') but ?/5 example of body swapping </em></figcaption>
 </figure>
 
 I wanted every ability to spawn a clone / body double, and also to have some way of "switching places" with the clones. This would allow some very interesting and tricky playing possibilities - juking / faking your opponents. Leblanc and Neeko can both spawn clones that are indistinguishable to their enemies, and even  independently controllable from their main character, however they cannot "swap" with their clones; upon receiving damaging / timeout the clones disappear in a puff of smoke. Zed can spawn a shadowy sillhouette figure at some distance, and can then re-activate the ability to swap his character location with the shadow - however the shadow is non-targettable and so not a true body double. I envisioned a fusion - where the body double is targettable like Leblanc and Neeko's and can take damage, and "swapping into the body double" preserves that state (damaged or not) - hence it becomes a game of whether to swap or not, and for the enemy whether to invest resources into damaging the clone (if they expect you to swap into it), or ignore the clone and still attack the original.
