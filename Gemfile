@@ -41,3 +41,5 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 gem "jemoji", git: "https://github.com/jekyll/jemoji.git", branch: "master"
 
 gem 'jekyll-twitter-plugin'
+
+gem 'jekyll-compose', group: [:jekyll_plugins]
