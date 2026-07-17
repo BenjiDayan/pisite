@@ -12,9 +12,11 @@ permalink: /about/
 <!-- ![](/assets/images/trying_glasses.jpg){: width="250" style="float: right;"}
 *Trying on glasses in Taiwan* -->
 
-Hi! I'm an ML researcher / engineer. Most recently I worked on a project on Bayesian networks at CHAI in UC Berkeley; in 2024 I built LLM agents & infrastructure at [Finster AI](https://finster.ai) in London. Before this I enjoyed a 2 year datascience/AI master's at ETH Zurich where I focused on NLP and mathematical models for social networks. I'm broadly interested in language, cognition, interpretable computational methods and neurosymbolic AI.
+Hi! I'm an ML researcher / engineer. I'm currently a MTS at Listen Labs in SF; last summer I worked on a project on Bayesian networks at CHAI in UC Berkeley; in 2024 I built LLM agents & infrastructure at [Finster AI](https://finster.ai) in London. Before this I enjoyed a 2 year datascience/AI master's at ETH Zurich where I focused on NLP and mathematical models for social networks. I'm broadly interested in language, cognition, interpretable computational methods and neurosymbolic AI.
 
 Prior all of that, I did a math bachelors at the University of Cambridge, and grew up in London except a 1 year stint 2008-9 in Beijing!
+
+[My CV](/assets/BenjaminDayanCV2026.pdf)
 
 
 
