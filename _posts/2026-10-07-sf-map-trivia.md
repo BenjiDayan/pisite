@@ -4,7 +4,7 @@ title: SF Map Trivia
 date: 2026-10-07 00:00:00 -0700
 ---
 
-I co-hosted an SF map trivia event with [Shreya Bansal](https://www.linkedin.com/in/shreya21bansal/)!
+I co-hosted an SF map trivia event with [Shreya Bansal](https://www.linkedin.com/in/shreya21bansal/) at [Muddy Waters Cafe](https://www.muddywatersf.com/)!
 
 [slides](https://docs.google.com/presentation/d/1TJ8gd-3hpDVUXv1cldvM-GC3wppETE_OPu4GN2AB5cw/edit?usp=sharing)
 
